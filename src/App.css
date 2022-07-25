@@ -12,11 +12,13 @@
 body {
   background-image: linear-gradient(120deg, #588157 0%, #dad7cd 100%);
   color: white;
-  font-family: myFirstFont;
+  font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
 }
 header {
   font-size: 2rem;
+
+  font-family: myFirstFont;
 }
 
 header,
@@ -64,6 +66,11 @@ form button:hover {
   align-items: center;
   transition: all 1s ease;
 }
+
+.todo-input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .filter-todo {
   padding: 1rem;
 }
@@ -81,7 +88,7 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: #588157;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -123,6 +130,7 @@ select {
 select {
   color: #344e41;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   cursor: pointer;
   width: 12rem;
 }
