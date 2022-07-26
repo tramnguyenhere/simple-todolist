@@ -35,17 +35,15 @@ const App = () => {
     }
   };
   const saveLocalTodos = () => { 
-    localStorage.setItem('todos', JSON.stringify(todos));
+    if(todos.length>0){localStorage.setItem('todos', JSON.stringify(todos))};
 }
 
   const getLocalTodos = () => {
     if (localStorage.getItem('todos') === null) {
       localStorage.setItem('todos', JSON.stringify([]));
     } else {
-      let todoLocal = JSON.parse(localStorage.getItem('todos'));
-      // JSON.parse(localStorage.getItem('todos'));
-    // console.log(todoLocal);
-    setTodos(todoLocal);
+      let todoLocal = JSON.parse( localStorage.getItem( 'todos' ) );
+      setTodos(todoLocal);
     }
   }
 

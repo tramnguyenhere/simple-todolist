@@ -2,7 +2,7 @@ import React from 'react';
 const Todo = ({ text, todo, todos, setTodos }) => {
   //Events
   const deleteHandler = () => {
-    setTodos(todos.filter((el) => el.id !== todo.id)); //Khong hieu
+    setTodos(todos.filter((el) => el.id !== todo.id));
   };
   const completeHandler = () => {
     setTodos(
@@ -10,7 +10,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         if (item.id === todo.id) {
           return {
             ...item,
-            completed: !item.completed, //Khong hieu
+            completed: !item.completed,
           };
         }
         return item;
